@@ -1,8 +1,9 @@
 import React from "react";
+import PostsDisplay from "./components/PostsDisplay/index.js";
 
 function App() {
     return (
-        <div>Hello world</div>
+        <PostsDisplay/>
     )
 }
 
