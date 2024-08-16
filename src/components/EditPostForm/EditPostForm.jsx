@@ -93,6 +93,6 @@ EditPostForm.propTypes = {
     title: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
     onSubmit: PropTypes.func.isRequired,
-    postId: PropTypes.number.isRequired
+    postId: PropTypes.any.isRequired
 }
 export default EditPostForm;

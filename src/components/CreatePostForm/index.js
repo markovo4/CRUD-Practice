@@ -1,3 +1,3 @@
-import EditPostForm from "./CreatePostForm.jsx";
+import CreatePostForm from "./CreatePostForm.jsx";
 
-export default EditPostForm;
+export default CreatePostForm;

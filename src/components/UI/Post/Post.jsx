@@ -59,7 +59,7 @@ const Post = ({title, body, id, onDelete, onEdit}) => {
 Post.propTypes = {
     title: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
+    id: PropTypes.any.isRequired,
     onDelete: PropTypes.func.isRequired,
     onEdit: PropTypes.func.isRequired
 }

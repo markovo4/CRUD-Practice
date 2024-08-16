@@ -8,7 +8,8 @@ export const styles = {
         borderRadius: '10px',
         maxWidth: '330px',
         gap: '20px',
-        boxShadow: 4
+        boxShadow: 4,
+        flexGrow: 1
     },
     containerText: {
         display: 'flex',

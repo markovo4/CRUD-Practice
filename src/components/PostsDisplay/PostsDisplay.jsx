@@ -25,11 +25,19 @@ const PostsDisplay = () => {
         ));
     }
 
+    const handleCreateNewPost = (title, body, id) => {
+        setPostList(prevPostList => [{title, body, id}, ...prevPostList]);
+    }
+
     return (
-        <Container>
-            <Box sx={styles.container}>
-                <CreatePostForm button={<Button variant='outlined' sx={styles.button}>Create a Post</Button>}/>
+        <Container sx={styles.container}>
+            <Box>
+                <CreatePostForm
+                    onCreate={handleCreateNewPost}
+                    button={<Button variant='outlined' sx={styles.button}>Create a Post</Button>}
+                />
             </Box>
+            <hr/>
             <Box sx={styles.containerPosts}>
                 {!isLoading && postList.map((post) => (
                     <Post

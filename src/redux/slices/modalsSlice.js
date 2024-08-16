@@ -2,7 +2,7 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     editPost: false,
-    createPost: false,
+    createPostOpen: false,
 }
 
 const modalsSlice = createSlice({
@@ -13,7 +13,7 @@ const modalsSlice = createSlice({
             state.editPost = !state.editPost;
         },
         setModalCreateOpen: state => {
-            state.editPost = !state.editPost;
+            state.createPostOpen = !state.createPostOpen;
         }
     }
 })
